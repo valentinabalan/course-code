@@ -11,11 +11,11 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           ECHO $GITHUB_WORKSPACE
-   display-wd-info:
-     runs-on: windows-latest
-     steps:
-       - name: Display Working Directory & List Files
-         run: |
+  display-wd-info:
+    runs-on: windows-latest
+    steps:
+      - name: Display Working Directory & List Files
+        run: |
           pwd
           ls -a
           echo $GITHUB_SHA
